@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Sparkles, CheckCircle2, Download, AlertCircle, Loader2 } from 'lucide-react';
+import { BookOpen, Sparkles, CheckCircle2, Download, AlertCircle } from 'lucide-react';
 
 const API_BASE_URL = 'https://ebook-generator-backend.onrender.com';
 
@@ -11,7 +11,7 @@ function App() {
   const [taskId, setTaskId] = useState('');
   const [status, setStatus] = useState('idle'); // idle, generating, completed, error
   const [message, setMessage] = useState('');
-  const [pdfPath, setPdfPath] = useState('');
+  // Removed unused pdfPath state
 
   // Poll status when a task is running
   useEffect(() => {
@@ -72,7 +72,6 @@ function App() {
     setStatus('idle');
     setTaskId('');
     setMessage('');
-    setPdfPath('');
     setTopic('');
   };
 
