@@ -25,7 +25,6 @@ function App() {
             setMessage(data.message || 'Processing...');
             if (data.status === 'completed') {
               setStatus('completed');
-              setPdfPath(data.pdf_path);
             } else if (data.status === 'failed') {
               setStatus('error');
               setMessage(data.message || 'Generation failed.');
