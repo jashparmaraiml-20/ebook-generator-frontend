@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BookOpen, Sparkles, CheckCircle2, Download, AlertCircle, Loader2 } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:8000'; // Default, will change in prod
+const API_BASE_URL = 'https://ebook-generator-backend.onrender.com';
 
 function App() {
   const [topic, setTopic] = useState('');
